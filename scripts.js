@@ -32,10 +32,13 @@
 
   const roles = Array.from(document.querySelectorAll('.role'));
   const expandAll = document.querySelector('.expand-all');
+  const expandLabel = expandAll.querySelector('.expand-all-label');
+  const expandIcon = expandAll.querySelector('.icon-arrow');
   expandAll.hidden = false;
   const updateExpandLabel = () => {
     const allOpen = roles.every(role => role.open);
-    expandAll.innerHTML = `${allOpen ? 'Collapse' : 'Expand'} all roles <span aria-hidden="true">${allOpen ? '↑' : '↗'}</span>`;
+    expandLabel.textContent = `${allOpen ? 'Collapse' : 'Expand'} all roles`;
+    expandIcon.classList.toggle('icon-arrow-up', allOpen);
   };
   expandAll.addEventListener('click', () => {
     const shouldOpen = !roles.every(role => role.open);
