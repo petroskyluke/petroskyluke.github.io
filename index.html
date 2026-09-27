@@ -1,184 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke Petrosky - Resume</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script defer src="scripts.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183d3b">
+  <title>Luke Petrosky | Platform Engineering &amp; Cybersecurity</title>
+  <meta name="description" content="Luke Petrosky is a Platform Engineer at UPMC focused on ServiceNow, cybersecurity, and automation. Explore his experience, skills, certifications, and interest in practical AI.">
+  <link rel="canonical" href="https://petroskyluke.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luke Petrosky | Platform Engineering &amp; Cybersecurity">
+  <meta property="og:description" content="Building better systems and making everyday work a little easier. ServiceNow, cybersecurity, and automation.">
+  <meta property="og:url" content="https://petroskyluke.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Luke Petrosky</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                </div>
-            </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#top" aria-label="Luke Petrosky, back to top"><span class="monogram" aria-hidden="true">lp<span>.</span></span><span>Luke Petrosky</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu <span class="menu-icon" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#approach">Approach</a>
+        <a href="#skills">Expertise</a>
+        <a class="nav-connect" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-dot" aria-hidden="true"></span> Platform engineer at UPMC</p>
+        <h1 id="hero-title">Better systems.<br><span class="serif">Less busywork.</span></h1>
+        <p class="hero-lead">I build and integrate solutions that help security teams work more efficiently.</p>
+        <p class="hero-description">I’m Luke Petrosky. My work brings together ServiceNow, cybersecurity, and automation to make everyday processes work a little better.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#experience">Get to know my work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/petroskyluke/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/petroskyluke" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
-    </nav>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-heading"><span>A CONNECTED APPROACH</span></div>
+        <svg class="connection-art" viewBox="0 0 440 410" fill="none">
+          <defs>
+            <pattern id="dot-grid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#345754"/></pattern>
+            <linearGradient id="route" x1="30" y1="40" x2="410" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#bddda1"/><stop offset="1" stop-color="#759c91"/></linearGradient>
+          </defs>
+          <rect width="440" height="410" fill="url(#dot-grid)"/>
+          <circle cx="220" cy="204" r="143" stroke="#365957"/>
+          <circle cx="220" cy="204" r="103" stroke="#365957"/>
+          <path d="M45 65H116Q142 65 142 91V133Q142 160 170 160H218Q247 160 247 189V271Q247 297 275 297H399" stroke="url(#route)" stroke-width="2"/>
+          <path d="M44 321H109Q137 321 137 293V268Q137 241 165 241H293Q322 241 322 212V95Q322 68 350 68H395" stroke="#85a99b" stroke-width="1.5"/>
+          <path d="M230 157V138Q230 112 256 112H284" stroke="#a6c89c" stroke-width="1.5"/>
+          <path d="M80 161H117M322 161H382M220 346V373" stroke="#547770"/>
+          <circle cx="45" cy="65" r="5" fill="#c7ed9f"/><circle cx="399" cy="297" r="5" fill="#c7ed9f"/>
+          <circle cx="44" cy="321" r="4" fill="#85a99b"/><circle cx="395" cy="68" r="4" fill="#85a99b"/>
+          <rect x="173" y="157" width="94" height="94" rx="24" fill="#c7ed9f"/>
+          <path d="M199 185V220H219M228 220V185H239Q250 185 250 197Q250 208 239 208H228" stroke="#183d3b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="27" y="92" width="141" height="38" rx="19" fill="#254b47" stroke="#486c60"/>
+          <text x="97.5" y="116" text-anchor="middle" fill="#edf3e8" font-family="Manrope, sans-serif" font-size="12">Cybersecurity</text>
+          <rect x="278" y="165" width="132" height="38" rx="19" fill="#254b47" stroke="#486c60"/>
+          <text x="344" y="189" text-anchor="middle" fill="#edf3e8" font-family="Manrope, sans-serif" font-size="12">ServiceNow</text>
+          <rect x="98" y="299" width="132" height="38" rx="19" fill="#254b47" stroke="#486c60"/>
+          <text x="164" y="323" text-anchor="middle" fill="#edf3e8" font-family="Manrope, sans-serif" font-size="12">Automation</text>
+          <rect x="247" y="87" width="74" height="38" rx="19" fill="#254b47" stroke="#486c60"/>
+          <text x="284" y="111" text-anchor="middle" fill="#edf3e8" font-family="Manrope, sans-serif" font-size="12">AI</text>
+          <circle cx="322" cy="112" r="3" fill="#c7ed9f"/><circle cx="109" cy="321" r="3" fill="#c7ed9f"/>
+        </svg>
+        <div class="art-caption"><span>Thoughtful engineering.<br>Practical improvements.</span></div>
+      </div>
+    </section>
 
-    <!-- Content Sections -->
-    <div class="container mt-5">
-        
-        <!-- Contact Section -->
-        <section id="contact" data-aos="fade-up" data-aos-delay="450">
-            <h2>Contact</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/petroskyluke" target="_blank">Luke Petrosky</a></p>
-                </div>
-            </div>
-        </section>        
-
-        <!-- Experience Section -->
-        <section id="experience" class="mb-5" data-aos="fade-up" data-aos-delay="150">
-            <h2>Experience</h2>
-
-            <!-- Intermediate Information Security Analyst - IAS Remediation at UPMC -->
-            <h5>Intermediate Information Security Analyst - IAS Remediation at UPMC</h5>
-            <p class="text-muted">Pittsburgh, PA | July 2023 - Present</p>
-            <ul>
-                <li>Utilized CrowdStrike Falcon to identify host vulnerabilities, address identity issues, resolve cloud platform misconfigurations, and perform analysis on security alerts.</li>
-                <li>Implemented Prisma Cloud vulnerability and compliance policies to alert and block on misconfigurations within containerized applications</li>
-                <li>Coded PowerShell scripts to process information, identify security weaknesses, prioritize CISA vulnerabilities, and automatically patch servers, saving 50 hours per year.</li>
-                <li>Leveraged BloodHound to identify security risks within Active Directory on 30k servers.</li>
-                <li>Spearheaded an Azure Fundamentals certification preparation group, guiding team members towards successful exam completion.</li>
-            </ul>
-                    
-            <!-- Information Security Analyst - IAS Remediation at UPMC -->
-            <h5>Associate Information Security Analyst - IAS Remediation at UPMC</h5>
-            <p class="text-muted">Pittsburgh, PA | July 2022 - July 2023</p>
-            <ul>
-                <li>Analyzed data for use in the creation of Splunk dashboards to address and remediate Log4Shell and other high priority vulnerabilities.</li>
-                <li>Reviewed violations of remote access security procedures and instituted countermeasures to halt unauthorized use on 60 machines.</li>
-                <li>Employed Microsoft Defender for Cloud to boost security scores across targeted subscriptions.</li>
-                <li>Initiated a Security+ certification preparation group, guiding team members towards successful exam completion.</li>
-            </ul>               
-
-            <!-- Systems Analyst - ITR at UPMC -->
-            <h5>Systems Analyst - ITR at UPMC</h5>
-            <p class="text-muted">Pittsburgh, PA | July 2022 - July 2023</p>
-            <ul>
-                <li>Competitive two year leadership rotational program consisting of four six-month rotations concluding with report out on key projects to over 100 members of IT including executive leadership.</li>
-                <li>Co-Chair of Content and Collaboration Committee: Orchestrated seamless migration of internal site from Classic to Modern SharePoint, delegating redesign tasks to 10 committee members and ensuring smooth go-live transition.</li>
-                <li>Rotated through four teams: Network Security, Application QA, Security Remediation and Microsoft Power Platform Center of Excellence.</li>
-                <li>Notable projects include Implementing Cisco ISE at on-site locations, developing automated application tests using Selenium framework, designing Splunk dashboards utilizing CMDB and Rapid7 data and establishing the Center of Excellence's SharePoint site as the primary internal resource for Power Platform.</li>
-            </ul> 
-             
-
-            <!-- UPMC - Summer Associate Information Services Division -->
-            <h5>Summer Associate - ISD at UPMC</h5>
-            <p class="text-muted">Pittsburgh, PA | June 2019 - November 2019</p>
-            <ul>
-                <li>Automated consolidation of reports from a Linux application using Python</li>
-                <li>Assisted in developing and writing unit tests for applications.</li>
-                <li>Participated in various social, service, and recruitment events</li>
-            </ul>
-
-            <!-- Liberty Tire Recycling - IT Intern -->
-            <h5>IT Intern - Liberty Tire Recycling</h5>
-            <p class="text-muted">Pittsburgh, PA | May 2018 - August 2018</p>
-            <ul>
-                <li>Contributed to the roll-out of new Android tablets, managing their configuration through the use of IBM MaaS360</li>
-            </ul>
-
-            <!-- Other Experience entries here -->
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section id="skills" class="mb-5" data-aos="fade-up" data-aos-delay="300">
-            <h2>Technical Skills</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <h5>Certifications:</h5>
-                    <ul>
-                        <li><a href="https://www.credly.com/badges/768855b1-6e17-4459-abb5-33ac93d474e7/public_url" target="_blank">CompTIA - Security+</a></li>
-                        <li><a href="https://www.credly.com/badges/8f2d72f3-b000-4897-94e5-d560f9b10db9/public_url" target="_blank">CompTIA - Network+</a></li>
-                        <li><a href="https://learn.microsoft.com/en-us/users/lukepetrosky-2242/credentials/c1825ad7383b3719" target="_blank">Microsoft - Azure Fundamentals</a></li>
-                    </ul>
-                    <img src="https://logowik.com/content/uploads/images/comptia8985.logowik.com.webp" alt="CompTIA Logo" class="img-fluid mb-2" style="max-width: 150px;">
-                </div>                
-                
-                <div class="col-lg-4 col-md-12">
-                    <h5>Cyber Security:</h5>
-                    <p>Vulnerability Remediation, Mitigation, Assessment, Compliance, Network Security, Security Event Analysis, Application Security, Container Security, Technical writing, Information Security</p>
-                </div>                
-                <div class="col-lg-4 col-md-12">
-                    <h5>Technical Skills:</h5>
-                    <p>Technical Skills: PowerShell, Python, Javascript, HTML, CSS, Excel, SQL, Splunk, Nexpose/Rapid7, CrowdStrike, BloodHound, GitHub, Amazon Web Services, Microsoft Azure, Microsoft Defender for Cloud, Azure DevOps, Power Apps, Power Automate, Power BI, SharePoint, Linux, Raspberry Pi, Palo Alto Firewalls, Cisco ISE, Automic, ServiceNow, Cherwell</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="mb-5" data-aos="fade-up" data-aos-delay="150">
-            <h2>Education</h2>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>California University of Pennsylvania (PennWest California)</h5>
-                    <p>BS Computer Information Systems</p>
-                    <p class="text-muted">Graduation - 2020</p>
-                    <img src="data:image/png;base64,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"
-                        alt="CALU Logo" class="img-fluid mb-2">
-                </div>
-                <div class="col-md-6">
-                    <h5>Community College of Allegheny County</h5>
-                    <p>AS Computer Information Technology</p>
-                    <p class="text-muted">Graduation - 2017</p>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAAByCAMAAADpu4RpAAAAkFBMVEWrGCv///+mAAzYra3+/PyqESekAACuIjOuMjr05+jiw8WpAB/Bd3emAAmpACHjwcXmy83s1tjJjIyxOEPFd36oABqxLkCnABX47/CyNka8X2W6WF+3TVWzQEm2R1DOkpTWpKnHgYTUoaG/cHPTkZfKh47fuLrDcHm8ZmuqGiO2U1arKS6wP0KuJTnr3Ny/Y21jDtzsAAAEeUlEQVR4nO2abXuqIBiA8QWcWpYl4bHMnKvVXv//vzuaghi0tdPRunY996dN4olbEB5IhAAAAAAAAAAAAAAAAAAAAAAAAIAbQc37hV4jxrbW/bJlV5gRz7DvFcMjV5m5c+c+mbvXmj3g++TherMrqvcJmJ0BzG4AmJ0BzH5MM3X/oMLphZ7NMCPED1rk78e+SZhU6OO2lonS1cvLehEQXxeVjgmVogblpfKzw5mVWvPc8qYSuxRzLUKTx4lcNi1qC0zQzAvdOI7dj6m1JEyJuoi6USfzIHrarrrd1p8ZZumTa5wQr+uvp87z9LTMmB2Tc7ryulW2jpy0s7dMjZoia7t77n5/b2aYqS0wDLc2I/tQLTuaYWLZp9fDF/Z11NJss99Ew5j5ga7ttRkeb5TWN2YYqV1Ztvy5UQscbdQ4pUmWLQYZjTjV3NrGDB8sbVllxnRiJavjgMR/9FHjFPuMncyO/Zhhpr239XPGHvVlpRnLzxSFTtVuoherzNQ29GNGdtLXhhJeiulnW2a7UtlHRHHMS9zJY7S1QjFqs3LeZFJfxx9SzelgZv5StCiMXhZOp5B9CK9sn8p7RUQLXu9xTUzGCEp4L038MqrwDvNlZ8Ora1o/ZrzL7Jz4ZSIh7QcRnfHm7Q406GYZYpxGpL6O6Wvz4MUHREXUqFynO2v+UGY45Td3psbGfLXyiNIgtmmc28WZrpqPHzASI/OiFvdhRiM+hAKlDL81Ay5+U+9009dxIqVUpOm0V8ajepedtvVhxucPO1fb4PP5w1LLMK4ruvLwMrP68+9iVhpddtjWi1kzR8RztVvYU9M+3WEgntRmpnSN5vXnFzyqrX+sFHoxax4zV9N4s3mU7E9dEl9kFTMm7WH8iJs106R9YXuHNhtzs73OzHmv5vD3Pw3VbE7vyoyPRs0CKkbjTDcau1m+sQ9kMz4anRuORjGDqK0XM8hOZ1ZkM4msujOtGZ9BotvNIGJ+nqp3V6x18Vodjvhh3qG6Jsy+iqqj35V6o67GYsSFB2XexyeZ/rM8GrHDL1tqVA29ZFeBSIh3B9OnvgRus6twTWi3DK+XR5Ka/bs8GrE/EWoH5nfQmfadERu7bT5qKRxMRUZshJlcNkpxMiqKYlRQ6TyoNQsSkRHbk07UkW5S6WcXMz6ztzTiVWcX02XG6pEayy1qzTq7mG7U4fZn6NzO012V2X72jZl7xkwsJ7c0C+Z6tcoMHTb/aIYXerUhzVCgP9E4mpVZrv6E5zuzMmfWRh3UDOFxrrnBtRkiS08tu8CsjLrVRB3WrHzWHgrlDsfNQa6Pkp3SbzP6rVkVNVKjDmxW7vUJW2aWJyFOv1FAyHpreROJfZAd/7fk9ClIplXFqThNLKPSJLPkijvNdqn332J8RggZC0y5CQEbk7HZlgWIHv/o5oW4rn76Wwcxz0Tl3OuvTNcDZmcAsxsAZmcAsxvwH8wGflPsUq43+7VvAf7WNzdZfutXar9Acyj4A37tG9IAAAAAAAAAAAAAAAAAAAAAAADANfwFwSx5n/L6gi4AAAAASUVORK5CYII="
-                        alt="CCAC Logo" class="img-fluid mb-2">
-                </div>
-            </div>
-        </section>
+    <div class="focus-strip wrap" aria-label="Areas of focus">
+      <span class="eyebrow">Where I focus</span>
+      <span>Platform engineering</span><span class="strip-star" aria-hidden="true">✳</span>
+      <span>Cybersecurity</span><span class="strip-star" aria-hidden="true">✳</span>
+      <span>Automation &amp; practical AI</span>
     </div>
 
-    <!-- Footer (if you want one) -->
-    <footer class="mt-5">
-        <div class="text-center py-3">
-            © 2024 by Luke Petrosky.</i>
+    <section class="about-section wrap section" id="about" aria-labelledby="about-title">
+      <div class="section-aside"><p class="eyebrow section-index">01 / A little about me</p><h2 id="about-title">Hi, I’m <span class="serif">Luke.</span></h2><img class="about-portrait" src="assets/luke-petrosky.jpg" alt="Luke Petrosky" width="200" height="200" loading="lazy" decoding="async"></div>
+      <div class="about-copy">
+        <p class="large-copy">I like finding ways to make everyday work a little easier. When a task feels unnecessarily complicated or repetitive, I start thinking about how to improve it. That’s what draws me to platform engineering and automation: solving problems that make someone’s day a little less frustrating.</p>
+        <p>I’m also curious about where AI can help, including here. I used it to help build this site, while shaping the content and structure myself to make sure it reflects my experience and how I think about my work.</p>
+      </div>
+    </section>
+
+    <section class="experience-section section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap experience-layout">
+        <div class="experience-intro">
+          <p class="eyebrow section-index">02 / The path so far</p>
+          <h2 id="experience-title">Built on experience.<br><span class="serif">Always building.</span></h2>
+          <p>A foundation in cybersecurity. A growing focus on platform engineering.</p>
+          <p class="timeline-instruction"><span aria-hidden="true">+</span> Open a role to see the details.</p>
+          <button class="expand-all text-link" type="button" hidden>Expand all roles <span aria-hidden="true">↗</span></button>
+          <div class="career-note"><span class="small-dot" aria-hidden="true"></span><span>Currently<br><strong>Platform Engineer, Intermediate</strong><br>UPMC · Remote</span></div>
         </div>
-    </footer>
 
-    <!-- JS Libraries -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-        });
-    </script>
+        <div class="career-timeline">
+          <div class="employer-heading"><span class="employer-mark" aria-hidden="true">U</span><h3>UPMC</h3><span class="employer-caption">Platform engineering &amp; cybersecurity</span></div>
+          <div class="role-list">
+            <details class="role current-role" open>
+              <summary><span class="role-heading"><span class="role-date">Jun 2026 – Present <span class="current-badge">Current</span></span><span class="role-title">Platform Engineer, Intermediate</span><span class="role-summary">USEM upgrade leadership · Security automation &amp; AI</span><span class="details-label"><span class="when-closed">More about this role</span><span class="when-open">Show less</span></span></span><span class="expand-icon" aria-hidden="true"></span></summary>
+              <div class="role-body">
+                <p>I lead platform improvements and explore ways to make our security processes more effective, with a focus on ServiceNow and practical applications of AI.</p>
+                <ul class="accomplishments">
+                  <li><strong>Led our Unified Security Exposure Management (USEM) upgrade,</strong> coordinating multiple teams across Automated Test Framework (ATF) testing, end-user training, and release promotion.</li>
+                  <li>Worked on the technical aspects of the upgrade, including reviewing skipped records and assessing their impact on existing configurations.</li>
+                  <li>Created <strong>Microsoft Copilot</strong> agents and am investigating how AI can improve team productivity and help better protect patient and health plan member data.</li>
+                  <li>Exploring our use of <strong>GitHub Copilot</strong> and investigating <strong>ServiceNow Otto</strong> to help end users work more effectively in USEM.</li>
+                  <li>Organized a study group to help teammates prepare for the ServiceNow <strong>Certified Application Developer (CAD)</strong> certification.</li>
+                </ul>
+                <ul class="tags" aria-label="Related skills and certifications"><li>ServiceNow</li><li>USEM</li><li>Upgrade coordination</li><li>ATF</li><li><strong>Microsoft Copilot</strong></li><li>CAD</li></ul>
+              </div>
+            </details>
+            <details class="role">
+              <summary><span class="role-heading"><span class="role-date">Jul 2025 – Jun 2026</span><span class="role-title">Platform Engineer, Associate</span><span class="role-summary">Secure solutions &amp; platform integrations</span><span class="details-label"><span class="when-closed">More about this role</span><span class="when-open">Show less</span></span></span><span class="expand-icon" aria-hidden="true"></span></summary>
+              <div class="role-body">
+                <p>Built and integrated secure solutions on the ServiceNow platform to enhance organizational security posture and streamline remediation efforts.</p>
+                <p>Integrated CrowdStrike, BloodHound, and Burp Suite with ServiceNow through REST APIs to connect security tools with platform workflows.</p>
+                <p>Deepened my understanding of ServiceNow’s architecture, including Business Rules, Script Includes, and how client-side and server-side scripting work together to support application behavior and integrations.</p>
+                <p>Organized a study group to help teammates prepare for the ServiceNow <strong>Certified System Administrator (CSA)</strong> certification. All team members earned the credential.</p>
+                <ul class="tags" aria-label="Related skills and certifications"><li>ServiceNow</li><li>Business Rules</li><li>Script Includes</li><li>JavaScript</li><li>REST APIs</li><li>CrowdStrike</li><li>BloodHound</li><li>Burp Suite</li><li>CSA</li></ul>
+              </div>
+            </details>
+            <details class="role">
+              <summary><span class="role-heading"><span class="role-date">Jul 2023 – Jul 2025</span><span class="role-title">Information Security Analyst, Intermediate</span><span class="role-summary">IAS Remediation · Security automation &amp; analysis</span><span class="details-label"><span class="when-closed">More about this role</span><span class="when-open">Show less</span></span></span><span class="expand-icon" aria-hidden="true"></span></summary>
+              <div class="role-body">
+                <p>Automated cybersecurity processes with Python, PowerShell, and JavaScript, including work with the CrowdStrike, Black Kite, and BloodHound APIs.</p>
+                <ul class="accomplishments">
+                  <li>Created PowerShell scripts to process security information, prioritize CISA vulnerabilities, and automate server patching.</li>
+                  <li>Used BloodHound to identify Active Directory security risks.</li>
+                  <li>Used CrowdStrike Falcon to investigate host vulnerabilities, identity issues, cloud misconfigurations, and security alerts.</li>
+                  <li>Implemented Prisma Cloud vulnerability and compliance policies for containerized applications.</li>
+                  <li>Organized a study group to help teammates prepare for the Microsoft <strong>Azure Fundamentals</strong> certification.</li>
+                </ul>
+                <ul class="tags" aria-label="Relevant skills"><li>API integrations</li><li>PowerShell</li><li>Python</li><li>JavaScript</li><li>Cloud security</li></ul>
+              </div>
+            </details>
+            <details class="role">
+              <summary><span class="role-heading"><span class="role-date">Jul 2022 – Jul 2023</span><span class="role-title">Information Security Analyst, Associate</span><span class="role-summary">IAS Remediation · Vulnerability management</span><span class="details-label"><span class="when-closed">More about this role</span><span class="when-open">Show less</span></span></span><span class="expand-icon" aria-hidden="true"></span></summary>
+              <div class="role-body">
+                <ul class="accomplishments">
+                  <li>Analyzed data for Splunk dashboards supporting Log4Shell and other high-priority vulnerability remediation.</li>
+                  <li>Reviewed remote-access security violations and helped implement countermeasures across 60 machines.</li>
+                  <li>Used Microsoft Defender for Cloud to improve security scores across subscriptions.</li>
+                  <li>Organized a study group to help teammates prepare for the CompTIA <strong>Security+</strong> certification.</li>
+                </ul>
+                <ul class="tags" aria-label="Relevant skills"><li>Splunk</li><li>Microsoft Defender for Cloud</li><li>Remediation</li></ul>
+              </div>
+            </details>
+            <details class="role">
+              <summary><span class="role-heading"><span class="role-date">Jul 2022 – Jul 2023</span><span class="role-title">Systems Analyst</span><span class="role-summary">IT Rotational Program · Cross-functional experience</span><span class="details-label"><span class="when-closed">More about this role</span><span class="when-open">Show less</span></span></span><span class="expand-icon" aria-hidden="true"></span></summary>
+              <div class="role-body">
+                <ul class="accomplishments">
+                  <li>Rotated through Network Security, Application QA, Security Remediation, and the Microsoft Power Platform Center of Excellence.</li>
+                  <li>Co-chaired the Content and Collaboration Committee, coordinating a migration from Classic to Modern SharePoint with 10 team members.</li>
+                  <li>Contributed to Cisco ISE implementation, Selenium automated tests, and Splunk dashboards using CMDB and Rapid7 data.</li>
+                  <li>Helped establish the Center of Excellence’s SharePoint site as an internal Power Platform resource.</li>
+                  <li>Presented project work to more than 100 IT colleagues, including executive leadership.</li>
+                </ul>
+                <ul class="tags" aria-label="Relevant skills"><li>Power Platform</li><li>SharePoint</li><li>Selenium</li><li>Cisco ISE</li></ul>
+              </div>
+            </details>
+            <details class="role">
+              <summary><span class="role-heading"><span class="role-date">Jun 2019 – Nov 2019</span><span class="role-title">Summer Associate</span><span class="role-summary">Information Services Division</span><span class="details-label"><span class="when-closed">More about this role</span><span class="when-open">Show less</span></span></span><span class="expand-icon" aria-hidden="true"></span></summary>
+              <div class="role-body"><ul class="accomplishments"><li>Automated the consolidation of Linux application reports using Python.</li><li>Helped develop applications and unit tests.</li><li>Participated in service and recruitment activities.</li></ul><ul class="tags" aria-label="Relevant skills"><li>Python</li><li>Linux</li><li>Unit testing</li></ul></div>
+            </details>
+          </div>
+          <div class="employer-heading second-employer"><span class="employer-mark" aria-hidden="true">L</span><h3>Liberty Tire Recycling</h3></div>
+          <div class="role-list">
+            <details class="role">
+              <summary><span class="role-heading"><span class="role-date">May 2018 – Aug 2018</span><span class="role-title">IT Intern</span><span class="role-summary">Device deployment &amp; configuration</span><span class="details-label"><span class="when-closed">More about this role</span><span class="when-open">Show less</span></span></span><span class="expand-icon" aria-hidden="true"></span></summary>
+              <div class="role-body"><p>Supported the rollout and configuration of Android tablets using IBM MaaS360.</p><ul class="tags" aria-label="Relevant skills"><li>IBM MaaS360</li><li>Device management</li></ul></div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="approach-section wrap section" id="approach" aria-labelledby="approach-title">
+      <div class="approach-top"><div><p class="eyebrow section-index">03 / Looking ahead</p><h2 id="approach-title">Clear rules.<br><span class="serif">New possibilities.</span></h2></div><div class="approach-intro"><p>I enjoy finding the repetitive parts of a process and figuring out how to make them easier. Sometimes that means a script, an integration, or a better workflow.</p><p>I’m especially interested in combining deterministic automation with AI to reduce manual effort while keeping the results understandable and verifiable.</p></div></div>
+      <div class="approach-grid">
+        <article class="approach-card"><span class="approach-symbol" aria-hidden="true">↳</span><p class="eyebrow">The foundation</p><h3>Deterministic automation</h3><p>Defined rules and repeatable steps for the work that needs consistent execution. Clear inputs, validation, and a process people can follow.</p></article>
+        <div class="approach-plus" aria-hidden="true">+</div>
+        <article class="approach-card ai-card"><span class="approach-symbol" aria-hidden="true">✳</span><p class="eyebrow">The opportunity</p><h3>Practical uses for AI</h3><p>Exploring how AI can help interpret information, summarize context, and support decisions within established workflows.</p></article>
+      </div>
+      <p class="approach-bottom"><span aria-hidden="true">↗</span> The goal: less repetitive work, more room for human judgment.</p>
+    </section>
+
+    <section class="skills-section section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-heading-row"><div><p class="eyebrow section-index">04 / The toolkit</p><h2 id="skills-title">Skills behind <span class="serif">the work.</span></h2></div><p>A mix of platform knowledge, security experience, hands-on development, and practical AI.</p></div>
+        <div class="skills-grid">
+          <article class="skill-group"><span class="skill-number" aria-hidden="true">01</span><h3>Platform engineering</h3><p>ServiceNow, secure integrations, software design, and workflow automation.</p><ul class="tags"><li>ServiceNow</li><li>APIs</li><li>Power Apps</li><li>Power Automate</li><li>Power BI</li><li>SharePoint</li><li>Automic</li><li>Cherwell</li></ul></article>
+          <article class="skill-group"><span class="skill-number" aria-hidden="true">02</span><h3>Cybersecurity</h3><p>Vulnerability assessment, remediation, mitigation, compliance, network security, security-event analysis, and application and container security.</p><ul class="tags"><li>CrowdStrike</li><li>BloodHound</li><li>Black Kite APIs</li><li>Prisma Cloud</li><li>Splunk</li><li>Nexpose / Rapid7</li><li>Microsoft Defender for Cloud</li><li>Palo Alto firewalls</li><li>Cisco ISE</li></ul></article>
+          <article class="skill-group"><span class="skill-number" aria-hidden="true">03</span><h3>Code &amp; automation</h3><p>Scripting, API integrations, automated testing, and technical writing.</p><ul class="tags"><li>PowerShell</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li><li>GitHub</li><li>Azure DevOps</li><li>Selenium</li></ul></article>
+          <article class="skill-group"><span class="skill-number" aria-hidden="true">04</span><h3>Cloud &amp; systems</h3><p>Supporting technologies across cloud platforms, infrastructure, and data.</p><ul class="tags"><li>Microsoft Azure</li><li>Amazon Web Services</li><li>Linux</li><li>Raspberry Pi</li><li>Excel</li></ul></article>
+          <article class="skill-group skill-group-ai"><span class="skill-number" aria-hidden="true">05</span><div><h3>AI tools &amp; workflows</h3><p>Creating Microsoft Copilot agents and using Codex for development, while evaluating GitHub Copilot and ServiceNow Otto for team workflows.</p></div><ul class="tags"><li>ServiceNow Otto</li><li>GitHub Copilot</li><li>Microsoft Copilot</li><li>Codex</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="credentials-section wrap section" id="certifications" aria-labelledby="certifications-title">
+      <div class="section-heading-row"><div><p class="eyebrow section-index">05 / Continuing to learn</p><h2 id="certifications-title">Knowledge, <span class="serif">backed up.</span></h2></div><p>Certifications across ServiceNow, cybersecurity, networking, and cloud fundamentals.</p></div>
+      <div class="cert-grid">
+        <a class="cert-card cert-link servicenow-cert" href="https://www.credly.com/badges/42457ab0-deb8-47c8-bd8f-0321af9e1102" target="_blank" rel="noopener noreferrer"><div class="cert-top"><span>ServiceNow</span><span aria-hidden="true">↗</span></div><div class="cert-identity"><img class="cert-badge" src="assets/servicenow-csa.png" alt="ServiceNow Certified System Administrator badge" width="90" height="90" loading="lazy" decoding="async"><span class="cert-abbreviation">CSA</span></div><h3>Certified System<br>Administrator</h3><span class="credential-link">View credential <span aria-hidden="true">↗</span></span></a>
+        <a class="cert-card cert-link servicenow-cert" href="https://www.credly.com/badges/8f7bcd4b-56df-40bd-8ec1-fe63ff40769b" target="_blank" rel="noopener noreferrer"><div class="cert-top"><span>ServiceNow</span><span aria-hidden="true">↗</span></div><div class="cert-identity"><img class="cert-badge" src="assets/servicenow-cad.png" alt="ServiceNow Certified Application Developer badge" width="90" height="90" loading="lazy" decoding="async"><span class="cert-abbreviation">CAD</span></div><h3>Certified Application<br>Developer</h3><span class="credential-link">View credential <span aria-hidden="true">↗</span></span></a>
+        <a class="cert-card cert-link" href="https://www.credly.com/badges/768855b1-6e17-4459-abb5-33ac93d474e7/public_url" target="_blank" rel="noopener noreferrer"><div class="cert-top"><span>CompTIA</span><span aria-hidden="true">↗</span></div><div class="cert-identity"><img class="cert-badge" src="assets/comptia-security-plus.png" alt="CompTIA Security+ badge" width="90" height="90" loading="lazy" decoding="async"><span class="cert-abbreviation">Sec+</span></div><h3>Security+</h3><span class="credential-link">View credential <span aria-hidden="true">↗</span></span></a>
+        <a class="cert-card cert-link" href="https://www.credly.com/badges/8f2d72f3-b000-4897-94e5-d560f9b10db9/public_url" target="_blank" rel="noopener noreferrer"><div class="cert-top"><span>CompTIA</span><span aria-hidden="true">↗</span></div><div class="cert-identity"><img class="cert-badge" src="assets/comptia-network-plus.png" alt="CompTIA Network+ badge" width="90" height="90" loading="lazy" decoding="async"><span class="cert-abbreviation">Net+</span></div><h3>Network+</h3><span class="credential-link">View credential <span aria-hidden="true">↗</span></span></a>
+        <a class="cert-card cert-link" href="https://learn.microsoft.com/en-us/users/lukepetrosky-2242/credentials/c1825ad7383b3719" target="_blank" rel="noopener noreferrer"><div class="cert-top"><span>Microsoft</span><span aria-hidden="true">↗</span></div><div class="cert-identity"><img class="cert-badge" src="assets/azure-fundamentals.svg" alt="Microsoft Certified Fundamentals badge" width="90" height="90" loading="lazy" decoding="async"><span class="cert-abbreviation azure-abbreviation">AZ900</span></div><h3>Azure Fundamentals</h3><span class="credential-link">View credential <span aria-hidden="true">↗</span></span></a>
+      </div>
+      <div class="education" id="education">
+        <h3>Education</h3>
+        <div class="education-item"><img class="education-logo" src="assets/calu-logo.png" alt="Cal U" width="112" height="64" loading="lazy" decoding="async"><span class="education-year">2020</span><div class="education-copy"><h4>BS, Computer Information Systems</h4><p>California University of Pennsylvania<br><span>Now PennWest California</span></p></div></div>
+        <div class="education-item"><img class="education-logo" src="assets/ccac-logo.png" alt="CCAC" width="112" height="64" loading="lazy" decoding="async"><span class="education-year">2017</span><div class="education-copy"><h4>AS, Computer Information Technology</h4><p>Community College of Allegheny County</p></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner"><div><p class="eyebrow">Keep the conversation going</p><h2 id="contact-title">Thanks for<br><span class="serif">stopping by.</span></h2><p>If you’d like to connect or talk about ServiceNow, security automation, or practical uses of AI, you can find me here.</p><div class="contact-links"><a class="button button-lime" href="https://www.linkedin.com/in/petroskyluke/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-outline" href="https://github.com/petroskyluke" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div><span class="contact-art" aria-hidden="true">↗</span></div>
+      <footer class="wrap site-footer"><a class="footer-name" href="#top">Luke Petrosky<span aria-hidden="true">.</span></a><span>Platform engineering · Cybersecurity · Automation</span><a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+    </section>
+  </main>
 </body>
-
 </html>
