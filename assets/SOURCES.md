@@ -9,3 +9,7 @@ Official credential artwork is used to identify the listed certifications. Educa
 - `azure-fundamentals.svg`: [Microsoft Azure Fundamentals certification page](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/); [badge artwork](https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg).
 - `calu-logo.png` and `ccac-logo.png`: extracted without alteration from the embedded education logos in this repository’s original `index.html` at commit `b4d6a2d0d953cf0b6e28378ae4d43f47dddf79f7`.
 - `luke-petrosky.jpg`: Luke Petrosky’s LinkedIn profile photo, downloaded from the direct image URL supplied by Luke for this website. The original photo is unchanged; its expiring URL is not used by the page.
+
+## Lucide icons
+
+The five decorative skill icons (`workflow`, `shield-check`, `code-xml`, `cloud`, and `sparkles`) are embedded as SVGs in `index.html` from [Lucide revision `5a92b9ba262de5bf10e864219883267672c05db8`](https://github.com/lucide-icons/lucide/tree/5a92b9ba262de5bf10e864219883267672c05db8/icons). Their size and stroke color are styled to match the site. The upstream license is retained in [lucide-license.txt](lucide-license.txt).
