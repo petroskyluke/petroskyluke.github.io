@@ -4,7 +4,7 @@
   document.documentElement.classList.add('js');
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#site-nav');
-  const mobile = window.matchMedia('(max-width: 800px)');
+  const mobile = window.matchMedia('(max-width: 1080px)');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   // Trace the existing illustration once when it first enters view.
@@ -44,16 +44,17 @@
 
   const roles = Array.from(document.querySelectorAll('.role'));
   const expandAll = document.querySelector('.expand-all');
-  const expandLabel = expandAll.querySelector('.expand-all-label');
-  const expandIcon = expandAll.querySelector('.icon-arrow');
+  const expandLabel = expandAll?.querySelector('.expand-all-label');
+  const expandIcon = expandAll?.querySelector('.icon-arrow');
   const roleStates = new Map(roles.map(role => [role, {
     summary: role.querySelector('summary'),
     body: role.querySelector('.role-body'),
     targetOpen: role.open,
     animation: null
   }]));
-  expandAll.hidden = false;
+  if (expandAll) expandAll.hidden = false;
   const updateExpandLabel = () => {
+    if (!expandAll) return;
     const allOpen = roles.every(role => roleStates.get(role).targetOpen);
     expandLabel.textContent = `${allOpen ? 'Collapse' : 'Expand'} all roles`;
     expandIcon.classList.toggle('icon-arrow-up', allOpen);
@@ -125,7 +126,7 @@
       updateExpandLabel();
     });
   });
-  expandAll.addEventListener('click', () => {
+  expandAll?.addEventListener('click', () => {
     const shouldOpen = !roles.every(role => roleStates.get(role).targetOpen);
     roles.forEach(role => setRoleOpen(role, shouldOpen));
   });
@@ -144,7 +145,7 @@
 
   // Keep the reader's place in the navigation as they move down the page.
   if ('IntersectionObserver' in window) {
-    const links = Array.from(navigation.querySelectorAll('a'));
+    const links = Array.from(navigation.querySelectorAll('a[href^="#"]'));
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
