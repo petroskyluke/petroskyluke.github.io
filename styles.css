@@ -87,6 +87,13 @@ h3 { font-size: 21px; letter-spacing: -.025em; }
 .hero-art { position: relative; color: var(--paper); background: var(--green); border-radius: 13px; padding: 27px 27px 24px; overflow: hidden; }
 .art-heading { display: flex; align-items: center; justify-content: space-between; font-size: 9px; letter-spacing: .18em; font-weight: 600; color: #ccdccd; }
 .connection-art { display: block; width: calc(100% + 12px); max-height: 355px; margin: 0 -6px; }
+.connection-route { stroke-linecap: round; }
+@keyframes trace-connection { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  .connection-art.is-tracing .connection-route { stroke-dasharray: 1; animation: trace-connection 1.5s cubic-bezier(.4, 0, .2, 1) both; }
+  .connection-art.is-tracing .connection-route-secondary { animation-delay: .2s; }
+  .connection-art.is-tracing .connection-route-ai { animation-duration: .7s; animation-delay: .8s; }
+}
 .art-caption { display: flex; align-items: center; justify-content: space-between; padding-top: 18px; border-top: 1px solid #42615a; font-size: 12px; line-height: 1.65; }
 .focus-strip { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding-block: 24px; border-block: 1px solid var(--line); font-size: 13px; font-weight: 600; }
 .focus-strip .eyebrow { color: var(--muted); }
@@ -144,6 +151,10 @@ h3 { font-size: 21px; letter-spacing: -.025em; }
 .when-open, .role[open] .when-closed { display: none; }
 .role[open] .when-open { display: inline; }
 .role-body { padding: 0 25px 25px; font-size: 14px; line-height: 1.85; color: #50645c; }
+.role.is-animating .role-body { overflow: hidden; }
+.role.is-closing .expand-icon::after { transform: rotate(90deg); }
+.role.is-closing .when-open { display: none; }
+.role.is-closing .when-closed { display: inline; }
 .role-body > :first-child { border-top: 1px solid var(--line); padding-top: 19px; }
 .role-body > p + p { margin-top: 13px; }
 .accomplishments { padding-left: 17px; margin: 0; }
@@ -183,8 +194,11 @@ h3 { font-size: 21px; letter-spacing: -.025em; }
 .servicenow-cert .cert-abbreviation { font-size: 48px; }
 .cert-card h3 { font-size: 17px; font-weight: 600; line-height: 1.45; }
 .cert-card p, .credential-link { font-size: 10px; color: var(--muted); padding-top: 17px; margin-top: auto; }
-.cert-link { transition: transform .2s ease, border-color .2s ease, background .2s ease; }
-.cert-link:hover { transform: translateY(-4px); border-color: #adc094; background: #fafcf6; }
+.cert-link { transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.cert-link:focus-visible { transform: translateY(-3px); border-color: #8da875; box-shadow: 0 8px 20px #203e3110; }
+@media (hover: hover) and (pointer: fine) {
+  .cert-link:hover { transform: translateY(-3px); border-color: #8da875; box-shadow: 0 8px 20px #203e3110; }
+}
 .credential-link { display: inline-flex; gap: 8px; align-items: center; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: #cbd6c1; }
 .education { display: grid; grid-template-columns: .5fr 1fr 1fr; gap: 40px; padding-top: 48px; margin-top: 49px; border-top: 1px solid var(--line); }
 .education > h3 { font-size: 18px; }
@@ -213,9 +227,6 @@ h3 { font-size: 21px; letter-spacing: -.025em; }
 .site-footer > span { color: #c1d3c6; font-size: 10px; }
 .back-top { font-size: 11px; }
 .back-top span { margin-left: 12px; }
-
-@keyframes open-role { from { opacity: .55; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
-.role[open] .role-body { animation: open-role .22s ease-out; }
 
 @media (min-width: 1500px) {
   .hero { padding-block: 93px; }
@@ -369,6 +380,7 @@ h3 { font-size: 21px; letter-spacing: -.025em; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
+  .cert-link:hover, .cert-link:focus-visible { transform: none; }
 }
 @media print {
   .site-header, .hero-art, .focus-strip, .menu-toggle, .hero-actions, .expand-all, .timeline-instruction, .career-note, .expand-icon, .details-label, .contact-art, .site-footer, .skip-link { display: none !important; }
