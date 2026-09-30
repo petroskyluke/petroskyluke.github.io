@@ -59,7 +59,7 @@
         });
       });
     }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
-    document.querySelectorAll('#top, #about, #experience, #approach, #skills, #certifications, #contact').forEach(section => observer.observe(section));
+    document.querySelectorAll('#top, #about, #experience, #skills, #certifications, #contact').forEach(section => observer.observe(section));
   }
 
   // Print all experience details, then restore the reader's expanded roles.
