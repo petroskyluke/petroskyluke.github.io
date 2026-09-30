@@ -124,6 +124,10 @@ h3 { font-size: 21px; letter-spacing: -.025em; }
 .current-role::before { background: var(--green); border-color: var(--green); box-shadow: 0 0 0 5px var(--soft), 0 0 0 6px #bdcdb0; }
 .role:hover { border-color: #adbf9f; }
 .role[open] { background: white; border-color: #b4c5a6; box-shadow: 0 5px 20px #203e3110; }
+.role.current-role { background: #e5f1d9; border-color: #9ab881; }
+.role.current-role:hover { border-color: #6f9258; }
+.current-role .current-badge { background: var(--green); color: var(--lime); }
+.current-role .current-badge::before { background: var(--lime); }
 .role summary { display: flex; align-items: flex-start; gap: 13px; justify-content: space-between; cursor: pointer; list-style: none; padding: 23px 25px 19px; border-radius: 8px; }
 .role summary::-webkit-details-marker { display: none; }
 .role-heading { display: flex; flex-direction: column; min-width: 0; }
