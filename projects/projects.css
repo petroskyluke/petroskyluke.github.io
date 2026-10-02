@@ -1,0 +1,19 @@
+.projects-intro { max-width: 590px; color: var(--muted); font-size: 16px; line-height: 1.8; }
+.projects-section { padding-bottom: 100px; }
+.project-card { display: grid; grid-template-columns: 1.15fr 1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: var(--white); transition: border-color .2s, box-shadow .2s; }
+.project-preview { display: flex; align-items: center; padding: 28px; background: #e8f0ec; border-right: 1px solid var(--line); }
+.project-preview img { display: block; width: 100%; height: auto; border: 1px solid #d5e0dc; border-radius: 8px; box-shadow: 0 10px 32px #183d3b12; }
+.project-copy { display: flex; flex-direction: column; align-items: flex-start; padding: 44px 38px; }
+.project-copy > .eyebrow { color: var(--muted); margin-bottom: 16px; }
+.project-copy h2 { font-size: 39px; letter-spacing: -.045em; margin-bottom: 19px; }
+.project-copy h2 > span { color: #729850; }
+.project-copy > p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 1.85; }
+.project-features { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 23px 0 30px; list-style: none; }
+.project-features li { border: 1px solid #dce5d6; border-radius: 4px; padding: 4px 8px; background: #f4f7ef; color: #47603f; font-size: 10px; font-weight: 600; }
+.project-open { display: inline-flex; align-items: center; gap: 20px; margin-top: auto; padding-block: 10px; min-height: 44px; font-size: 13px; font-weight: 700; }
+.project-open .icon { transition: transform .2s; }
+.project-card:focus-visible { border-color: #829e73; box-shadow: 0 8px 28px #183d3b12; }
+@media (hover: hover) and (pointer: fine) { .project-card:hover { border-color: #829e73; box-shadow: 0 8px 28px #183d3b12; } .project-card:hover .project-open .icon { transform: translateX(4px); } }
+@media (max-width: 950px) { .project-card { grid-template-columns: 1fr; } .project-preview { border-right: 0; border-bottom: 1px solid var(--line); padding: 28px 40px; } .project-preview img { max-width: 650px; margin-inline: auto; } }
+@media (max-width: 580px) { .projects-section { padding-bottom: 64px; } .project-preview { padding: 20px 16px; } .project-copy { padding: 28px 23px; } .project-copy h2 { font-size: 34px; } .projects-intro { font-size: 14px; } }
+@media (prefers-reduced-motion: reduce) { .project-card, .project-open .icon { transition: none; } }
